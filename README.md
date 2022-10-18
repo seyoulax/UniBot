@@ -1,2 +1,7 @@
-# UniBot
-The bot for getting weather and finding people nearby
+инструкция:
+-1. Поднять докер 
+-2. Войти в бд(пароль inordic123, сервер mysql, бд bot_data)
+-3. зайти и потестить бота
+
+бот @regBot123_bot
+

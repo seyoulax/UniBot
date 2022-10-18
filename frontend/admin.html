@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+
+        </header>
+        <main>
+            <div>
+                <table>
+                    <thead>
+                        <td>
+                            id
+                        </td>
+                        <td>
+                            first_name
+                        </td>
+                        <td>
+                            username
+                        </td>
+                        <td>
+                            latitude
+                        </td>
+                        <td>
+                            longitude
+                        </td>
+                    </thead>
+                    <tbody>
+                        <tr v-for="user in users">
+                            <td>
+                                {{user.id}}
+                            </td>
+                            <td>
+                                {{user.first_name}}
+                            </td>
+                            <td>
+                                {{user.username}}
+                            </td>
+                            <td>
+                                {{user.latitude}}
+                            </td>
+                            <td>
+                                {{user.longitude}}
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+<script src="https://unpkg.com/vue"></script>
+<script>
+    Vue.createApp({
+        data() 
+        {
+            return {
+                users: this.getData()
+            }
+        },
+        methods: {
+            getData(){
+                let xhr = new XMLHttpRequest();
+                xhr.open("POST", "http://localhost:8090/index.php", false);
+                xhr.send();
+                let data = JSON.parse(xhr.responseText);
+                return data;
+            }
+        }
+    }).mount("#wrapper");
+</script>
+</body>
+</html>

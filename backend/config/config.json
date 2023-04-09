@@ -1,9 +1,9 @@
 {
     "database" : {
-        "user" : "root",
-        "password" : "inordic123",
-        "database_name" : "bot_data"
+        "user" : "{username}",
+        "password" : "{password}",
+        "database_name" : "{db name}"
     },
-    "bot_token" : "5378816043:AAHIEkTEtBH922tAZtHYYVYJU4Rrpv4E2-s",
-    "weatherApiKey" : "043ba3497emsh35fe7d49bdc695ap18d919jsnb86bc5dc874b"
+    "bot_token" : "{bot-token}",
+    "weatherApiKey" : "{weather-token}"
 }

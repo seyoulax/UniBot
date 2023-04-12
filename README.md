@@ -31,15 +31,15 @@
 
 <ul>
 <li>
-  <b>Interesting way to find people nearby</b>
   <details>
-    <p>In this project you`ll find several formulas to find people near to you by certain amount of metres</p>
+      <summary><b>Interesting way to find people nearby</b></summary>
+      <ins><p>In this project you`ll find several formulas to find people near to you by certain amount of metres</p></ins>
   </details>
 </li>
 <li>
-  <b>Weather</b>
   <details>
-    <p>You`ll get the weather forecast when you fisrt ask for it and then each 30 minutes</p>
+      <summary><b>Weather</b></summary>
+      <ins><p>You`ll get the weather forecast when you fisrt ask for it and then each 30 minutes</p></ins>
   </details>
 </li>
 </ul>
